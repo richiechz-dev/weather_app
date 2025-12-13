@@ -11,6 +11,7 @@ class WeatherService {
 
   WeatherService(this.apiKey);
 
+  // Function async to get weather
   Future<Weather> getWeather(String cityName) async {
     final response = await http.get(Uri.parse('$BASE_URL?q=$cityName&appid=$apiKey&units=metric'));
 
@@ -20,6 +21,8 @@ class WeatherService {
       throw Exception('Failed to load weather data');
     }
   }
+
+  //Function async to get current city
 
   Future<String> getCurrentCity() async {
     LocationPermission permission = await Geolocator.checkPermission();

@@ -1,3 +1,4 @@
+// Definition of the data model, similar that Pydantic (in Python) 
 class Weather {
 
   final String cityName;
