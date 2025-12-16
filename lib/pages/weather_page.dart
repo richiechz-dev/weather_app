@@ -81,7 +81,7 @@ class _WeatherPageState extends State<WeatherPage> {
             //Animation
             Lottie.asset(getWeatherAnimations(_weather?.mainCondition)),
             //temperature
-            Text('${_weather?.temperature.round()}°C'),
+            Text('${_weather?.temperature.round()}°C', style: TextStyle(fontSize: 24.0)),
             //weather condition
             Text(_weather?.mainCondition ?? 'Loading condition ...')
           ],
