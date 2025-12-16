@@ -74,16 +74,17 @@ class _WeatherPageState extends State<WeatherPage> {
     return Scaffold(
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             // city name
-            Text(_weather?.cityName ?? 'Loading city ... '),
+            Text(_weather?.cityName ?? 'Loading city ... ', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold)
+            ),
             //Animation
             Lottie.asset(getWeatherAnimations(_weather?.mainCondition)),
             //temperature
-            Text('${_weather?.temperature.round()}°C', style: TextStyle(fontSize: 24.0)),
+            Text('${_weather?.temperature.round()}°C', style: TextStyle(fontSize: 70.0, fontWeight: FontWeight.bold)),
             //weather condition
-            Text(_weather?.mainCondition ?? 'Loading condition ...')
+            Text(_weather?.mainCondition ?? 'Loading condition ...', style: TextStyle(fontSize: 18.0, color: Colors.grey[600]),)
           ],
         ),
       ),
