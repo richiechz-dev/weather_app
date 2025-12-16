@@ -178,6 +178,12 @@ flutter run
 
 ## Capturas de Pantalla
 
+![Vista principal](assets/screenshots/home.jpg)
+
+La aplicación muestra:
+- Nombre de la ciudad detectada
+- Animación del clima (nubes, lluvia, sol, etc.)
+- Temperatura actual en grados Celsius
 La aplicación muestra:
 - Nombre de la ciudad detectada
 - Animación del clima (nubes, lluvia, sol, etc.)
