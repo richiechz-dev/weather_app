@@ -2,7 +2,7 @@
 
 Aplicación móvil desarrollada con Flutter que muestra información meteorológica en tiempo real basada en la ubicación actual del usuario.
 
-## 📋 Descripción
+## Descripción
 
 Esta aplicación obtiene automáticamente la ubicación del dispositivo y muestra las condiciones climáticas actuales, incluyendo la temperatura y animaciones según el estado del clima. Utiliza la API de OpenWeatherMap para obtener datos meteorológicos precisos.
 
@@ -14,16 +14,14 @@ Esta aplicación obtiene automáticamente la ubicación del dispositivo y muestr
 - Muestra el nombre de la ciudad actual
 - Interfaz de usuario limpia y moderna
 
-## 🚀 Tecnologías y Dependencias
-
-### Dependencias principales:
+## Dependencias principales:
 - **flutter**: Framework principal
 - **http** (^1.6.0): Realizar peticiones HTTP a la API
 - **geolocator** (^14.0.2): Obtener la ubicación GPS del dispositivo
 - **geocoding** (^4.0.0): Convertir coordenadas en nombres de ciudades
 - **lottie** (^3.3.2): Animaciones JSON para las condiciones climáticas
 
-## 🏗️ Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 lib/
@@ -36,7 +34,7 @@ lib/
     └── weather_service.dart    # Servicio para consultar el API
 ```
 
-## 📚 Conceptos Fundamentales de Dart Utilizados
+## Conceptos Fundamentales de Dart Utilizados
 
 ### 1. **Clases y Constructores**
 Las clases son los bloques de construcción fundamentales en Dart. En este proyecto se definen clases para organizar el código:
@@ -55,6 +53,10 @@ class Weather {
 - **Constructor con parámetros nombrados**: Usa `{}` y `required` para parámetros obligatorios
 
 ### 2. **Factory Constructors**
+Es un patron de diseño, pero de igual forma en dart es una palabra clave, una funcionalidad que nos permite integrar este patron.
+Basicamente es un objeto que se encargar de crear otros objetos.
+
+
 Patrón usado para crear instancias con lógica adicional, útil para parsear JSON:
 
 ```dart
@@ -207,7 +209,7 @@ flutter build ios  # iOS
 flutter analyze
 ```
 
-## 📝 Notas
+## Notas Adicionales
 
 - La API key está visible en el código por simplicidad. En producción, usa variables de entorno o archivos de configuración seguros.
 - Los assets de animaciones Lottie están en la carpeta `assets/`
