@@ -1,4 +1,4 @@
-# Weather App 🌦️
+# Weather App 
 
 Aplicación móvil desarrollada con Flutter que muestra información meteorológica en tiempo real basada en la ubicación actual del usuario.
 
@@ -209,9 +209,9 @@ flutter build ios  # iOS
 flutter analyze
 ```
 
-## Notas Adicionales
+## Notas Personales
 
-- La API key está visible en el código por simplicidad. En producción, usa variables de entorno o archivos de configuración seguros.
+- La API key está visible en el código por simplicidad. En producción, debo usar variables de entorno o archivos de configuración seguros. Similares a un proyecto en FastAPI
 - Los assets de animaciones Lottie están en la carpeta `assets/`
 
 ---
