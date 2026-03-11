@@ -37,7 +37,7 @@ lib/
 ## Conceptos Fundamentales de Dart Utilizados
 
 ### 1. **Clases y Constructores**
-Las clases son los bloques de construcción fundamentales en Dart. En este proyecto se definen clases para organizar el código:
+En este proyecto se definen clases para organizar el código:
 
 ```dart
 class Weather {
@@ -54,7 +54,7 @@ class Weather {
 
 ### 2. **Factory Constructors**
 Es un patron de diseño, pero de igual forma en dart es una palabra clave, una funcionalidad que nos permite integrar este patron.
-Basicamente es un objeto que se encargar de crear otros objetos.
+Basicamente es un objeto que se encargar de crear otros objetos. Por ejemplo con Python y con SQLAlchemy nos provee un objeto igualmente facroty que no entrega un objeto session.
 
 
 Patrón usado para crear instancias con lógica adicional, útil para parsear JSON:
@@ -84,7 +84,7 @@ Future<Weather> getWeather(String cityName) async {
 - **`await`**: Espera a que se complete una operación asíncrona
 
 ### 4. **Null Safety**
-Dart 3 requiere manejo explícito de valores nulos:
+Dart requiere manejo explícito de valores nulos:
 
 ```dart
 String? city = placemark[0].locality;  // ? indica que puede ser null
@@ -109,7 +109,7 @@ Text('${_weather?.temperature.round()}°C')
 ```
 
 ### 7. **Map<String, dynamic>**
-Estructura de datos clave-valor usada para JSON:
+Estructura de datos clave-valor usada para JSON, con sintaxis muy similar a Java:
 
 ```dart
 Map<String, dynamic> json = jsonDecode(response.body);
@@ -178,7 +178,7 @@ final _weatherService = WeatherService('TU_API_KEY_AQUI');
 flutter run
 ```
 
-## Capturas de Pantalla
+## Capturas de Pantalla (Pendiente por subir)
 
 La aplicación muestra:
 - Nombre de la ciudad detectada
@@ -211,10 +211,13 @@ flutter analyze
 
 ## Notas Personales
 
-- La API key está visible en el código por simplicidad. En producción, debo usar variables de entorno o archivos de configuración seguros. Similares a un proyecto en FastAPI
+- La API key está visible en el código por simplicidad. En producción, debo usar variables de entorno o archivos de configuración seguros. Similar a un proyecto en FastAPI donde es recomendable guardar las api keys en un .env
 - Los assets de animaciones Lottie están en la carpeta `assets/`
 
 ---
+## Contacto
 
-Desarrollado usando Flutter y Dart
+- **GitHub:** [richiechz-dev](https://github.com/richiechz-dev)
+- **LinkedIn:** [Ricardo Chavez](https://www.linkedin.com/in/ricardochz/)
+- **Email:** gic.rc455@gmail.com
 
