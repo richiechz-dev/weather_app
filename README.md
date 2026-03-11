@@ -35,6 +35,7 @@ lib/
 ```
 
 ## Conceptos Fundamentales de Dart Utilizados
+Muchos conceptos usados son universales, y hay varias formas de visualizar el flujo de datos, en este caso usamos una api externa directamente el proyecto (lo cual puede ser peligroso en realidad). Al consumir la api, aplicamos modelos (muy similar a los modelos que podemos crear por ejemplo con Pydantic con fastapi para entrada y salida de datos) para presentar los datos. Podriamos utilizar en su defecto un proxy con fastapi para que nuestra api consuma directamente OpenWeather API y formatee los datos para que sean consumidos por la app flutter sin exponer informacion importante.
 
 ### 1. **Clases y Constructores**
 En este proyecto se definen clases para organizar el código:
